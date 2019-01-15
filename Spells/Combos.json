@@ -1,0 +1,6 @@
+{
+	"Shoot": ["ComboKey2", "ComboKey2"],
+	"SuperJump":["ComboKey1", "ComboKey1"],
+	"AirBomb":["ComboKey3", "ComboKey3"],
+	"Block":["ComboKey1", "ComboKey2", "ComboKey3"]
+}

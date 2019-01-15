@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+    <meta charset="utf-8"/>
+    <title>King of The Hill</title>
+    <script src="Libs/phaser.js"></script>
+    <script src="Scenes/Boot.js"></script>
+    <script src="Scenes/Preloader.js"></script>
+    <script src="Scenes/MainMenu.js"></script>
+    <script src="Scenes/Level1.js"></script>
+    <script src="Scenes/GameOver.js"></script>
+    <script src="Classes/Player.js"></script>
+    <script src="Classes/Platforms.js"></script>
+    <script src="Classes/KeyCombo.js"></script>
+    <script src="Classes/Background.js"></script>
+    <head>
+        <link href="/favicon.ico" type="image/x-icon" rel="icon" />
+        <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <body>
+        <script type="text/javascript">
+            "use strict";
+            window.onload = function(){
+                var game = new Phaser.Game(1440,900,Phaser.CANVAS,'game');
+
+                game.state.add('Boot', Game.Boot);
+                game.state.add('Preloader', Game.Preloader);
+                game.state.add('MainMenu', Game.MainMenu);
+                game.state.add('GameOver', Game.GameOver);
+                game.state.add('Level1', Game.Level1);
+
+                game.state.start('Boot');
+
+            };
+        </script>
+        <div id="game"></div>
+        <span class = 'gametext'>
+            <div id = "About">
+                <h1>About:</h1>
+                <h2>This is a 1v1 platformer, arena style, king of the hill, game where players compete to capture a platform for a specific amount of time. Players can pull off combos, manuever around threats, and become king of the platforms. The player who has scored 1000 points wins the game.</h2>
+            </div>
+            <div id = "HowToPlay:">
+                <div>
+                    <h3 id = "howToTitle">How To Play: Stand on a platform and watch your score go up! Get 1000 Points to WIN.</h3>
+                </div>
+                <div id = "PlayerOneControls">
+                    <p2 id = "p1Controls">Player One Controls:</p2>
+                    <div>Movement: W, A, S, D</div>
+                    <div>Combo Keys: R,T,Y</div>
+                    <div>Combos:</div>
+                    <div>Super Jump: R + R</div>
+                    <div>Shoot: T + T</div>
+                    <div>Bomb: Y + Y</div>
+                </div>
+                <div id = "PlayerTwoControls">
+                    <p2 id = "p2Controls">Player Two Controls:</p2>
+                    <div>Movement: Up, Down, Left, Right</div>
+                    <div>Combo Keys: I,O,P</div>
+                    <div>Combos:</div>
+                    <div>Super Jump: I + I</div>
+                    <div>Shoot: O + O</div>
+                    <div>Bomb: P + P</div>
+                </div>
+            </div>
+        </span>
+        <div id="credits">
+            <p id = "creditsTitle">
+                Credits/sources:</p>
+            <ul>
+                <li>https://0x72.itch.io/16x16-industrial-tileset</li>
+                <li>https://ansimuz.itch.io/cyberpunk-street-environment</li>
+                <li>https://kenney.nl/assets</li>
+                <li>https://freesound.org/</li>
+                <li>https://www.youtube.com/watch?v=nFp_2eJlfYg</li>
+                <li>https://phaser.io/</li>
+            </ul>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+body {
+    background: black;
+    color: #40bfbf;
+    font-family: 'VT323', monospace;
+    position: absolute;
+    top: 76%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div{
+    font-size: 25px;
+    position: relative;
+}
+
+#PlayerTwoControls{
+    float: right;
+    right: 30%;
+}
+#PlayerOneControls{
+    float: left;
+}
+#p1Controls{
+    color: #51f7f7;
+    font-size: 30px;
+    font-weight: bold;
+}
+#p2Controls{
+    color: #51f7f7;
+    font-size: 30px;
+    font-weight: bold;
+}
+#credits{
+    top: 200px;
+    right: 240px;
+}
+#creditsTitle{
+    font-size: 30px;
+}
+ul{
+    margin-top: -20px;
+    float: left;
+}
